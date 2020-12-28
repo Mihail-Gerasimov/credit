@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #2F2F2F;
+    background-color: #fff;
+}
+
+a,
+a:hover {
+    color: #2F2F2F !important;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* 
+.row {
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+} */
+
+input,
+button {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    outline: none;
+    margin: 0px;
+}
+
+input:hover,
+button:hover {
+    margin: 0px;
+    border: 0;
+    outline: none;
+}
+
+input:focus,
+button:focus {
+    margin: 0px;
+    box-shadow: none !important;
+    border: none;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0px;
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 992px;
+        padding: 0 5px 0 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 768px;
+        padding: 0 8px 0 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 576px;
+    }
+}
+
+
+/* navigation */
+
+.header-text-top {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #3633E1;
+    padding: 10px 0;
+}
+
+.navigation .container {
+    max-width: 1500px;
+}
+
+.navbar-brand {
+    margin-right: 100px;
+}
+
+.navbar-toggler {
+    text-decoration: none;
+    border: none;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-link {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+}
+
+.header__mobile {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 180%;
+    color: #3633E1 !important;
+}
+
+
+/* navigation */
+
+
+/* header */
+
+.header {
+    background: url(../img/header/header-fon.png);
+    margin-bottom: 120px;
+}
+
+.header .container {
+    max-width: 1500px;
+}
+
+
+/* header */
