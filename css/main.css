@@ -161,10 +161,99 @@ button:focus {
 .header {
     background: url(../img/header/header-fon.png);
     margin-bottom: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -113px;
+}
+
+.woman-money {
+    z-index: -1;
+    right: 0;
+    width: 610px;
+    bottom: 0;
+    z-index: -1;
+    /* width: 580px;
+    margin-top: -168px; */
+    transform: translate(-74%);
 }
 
 .header .container {
     max-width: 1500px;
+}
+
+.percent {
+    padding-top: 220px;
+    padding-bottom: 170px;
+    z-index: 1;
+}
+
+.percent__one-hundrerd {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.percent__one-hundrerd span {
+    text-transform: uppercase;
+    color: #3633E1;
+}
+
+.percent__six {
+    width: 315px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.percent__six span {
+    text-transform: uppercase;
+    color: #3633E1;
+}
+
+.percent__history {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 80px;
+}
+
+.percent__apply {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    width: 205px;
+    padding: 20px 0;
+    cursor: pointer;
+    background-color: #3633E1;
+    border-radius: 6px;
+}
+
+.percent-right-block {
+    margin-right: 80px;
+    padding-top: 25px;
+}
+
+.percent__information {
+    width: 360px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 13px;
+    position: relative;
+}
+
+.percent__information::after {
+    color: #3633E1;
+    content: '\2714';
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.percent__information span {
+    font-weight: bold;
 }
 
 
