@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/media.css">
     <title>Кредиты</title>
@@ -57,8 +58,8 @@
 
     <section class="header">
         <div class="container">
-            <div class="percent position-relative d-flex justify-content-between">
-                <img class="woman-money position-absolute" src="./img/header/woman-money.png" alt="woman">
+            <div class="percent position-relative align-items-center align-items-md-start flex-column flex-md-row d-flex justify-content-center justify-content-md-between px-2">
+                <!-- <img class="woman-money position-absolute" src="./img/header/woman-money.png" alt="woman"> -->
                 <div class="percent-left-block">
                     <div class="percent-left-block__subblock">
                         <h1 class="percent__one-hundrerd">Получите <span>100%</span></h1>
@@ -68,16 +69,114 @@
                     </div>
                     <!-- <img class="woman-money " src="./img/header/woman-money.png" alt="woman"> -->
                 </div>
+                <img class="money-mobile d-block d-md-none" src="./img/header/money-mobile.png" alt="money">
+                <img class="woman-money" src="./img/header/woman-money.png" alt="woman">
                 <div class="percent-right-block">
                     <p class="percent__information mb-4"><span>Без проверки кредитной истории</span> <br> Нам не важно на сколько плохая у Вас кредитная история</p>
                     <p class="percent__information mb-4"><span>Без официального трудоустройства</span> <br> У нас вы можете оформить от 100 тыс. до 5 млн. руб.</p>
                     <p class="percent__information"><span>Кредит на любые цели</span> <br> Кредит на выгодных условиях и без дополнительных услуг</p>
                 </div>
-
+                <div class="percent-fixed position-fixed d-flex d-sm-none">
+                    <button class="percent__apply d-block mr-2">Подать заявку</button>
+                    <div class="btn-phone__number">
+                        <a class="" href="tel:8 800 800 80 80"><img src="./img/header/phone-btn-mobile.png" alt="phone"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section></section>
+    <section class="calc">
+
+        <div class="container">
+            <div class="row calc__row">
+                <div class="calc__box calc__card-box">
+                    <div class="calc__card calc__card--blue">
+                        <div class="calc__img"><img src="img/calc/money.png" alt="money"></div>
+                        <p class="calc__text">Помогли взять </br> более <strong>15 МЛН РУБЛЕЙ</strong></p>
+                    </div>
+                    <!-- /.calc__card -->
+                    <div class="calc__card calc__card--green">
+                        <div class="calc__img"><img src="img/calc/bank.png" alt="bank"></div>
+                        <p class="calc__text">Более <strong>50 БАНКОВ</strong></br> партнеров </p>
+                    </div>
+                    <!-- /.calc__card -->
+                    <div class="calc__card calc__card--yellow">
+                        <div class="calc__img"><img src="img/calc/error.png" alt="error"></div>
+                        <p class="calc__text">Одобрения даже с <strong>ПЛОХОЙ </br> ИСТОРИЕЙ</strong> кредита </p>
+                    </div>
+                    <!-- /.calc__card -->
+                    <div class="calc__card calc__card--red">
+                        <div class="calc__img"><img src="img/calc/woman.png" alt="woman"></div>
+                        <p class="calc__text"><strong>БЕЗ СПРАВОК</strong> </br> и поручителей </p>
+                    </div>
+                    <!-- /.calc__card -->
+                </div>
+                <!-- /.calc__box -->
+                <div class="calc__box calc__calc">
+                    <div class="row row-input">
+                        <div class="calc__calc-approval">
+                            <h3 class="calc__calc-percent">95%</h3>
+                            <p class="calc__calc-text">Процент одобрения кредита</p>
+                        </div>
+                        <div class="calc__calc-input-group">
+                            <label class="calc__calc-label" for="calc__calc-input">Сумма кредита до 20 млн ₽</label>
+                            <input id="calc__calc-input" type="text" class="calc__calc-input">
+                        </div>
+                    </div>
+
+                    <div class="calc__calc-text calc__calc-text--time">Выберите срок</div>
+                    <div class="row row-calc-card">
+                        <div data-period="1" class="calc__calc-card">1 год</div>
+                        <div data-period="2" class="calc__calc-card">2 года</div>
+                        <div data-period="3" class="calc__calc-card">3 года</div>
+                        <div data-period="4" class="calc__calc-card">4 года</div>
+                        <div data-period="5" class="calc__calc-card">5 лет</div>
+                        <div data-period="6" class="calc__calc-card">6 лет</div>
+                        <div data-period="7" class="calc__calc-card">7 лет</div>
+                        <div data-period="8" class="calc__calc-card">8 лет</div>
+                        <div data-period="9" class="calc__calc-card">9 лет</div>
+                        <div data-period="10" class="calc__calc-card">10 лет</div>
+                        <p class="calc__calc-card-text">Расчет калькулятора произведен по ставкам, действующим при условии оформления финансовой защиты к кредиту.</br> Не является публичной офертой.</p>
+                    </div>
+                    <p class="calc__calc-offer">Наше предложение</p>
+                    <div class="row row-payment">
+                        <div class="calc__calc-bet-wrap">
+                            <div class="calc__select-wrap">
+                                <select name="calc__select" id="calc__select" class="calc__select">
+                      <option value=""></option>
+                      <option value="1">1 год</option>
+                      <option value="2">2 года</option>
+                      <option value="3">3 года</option>
+                      <option value="4">4 года</option>
+                      <option value="5">5 лет</option>
+                      <option value="6">6 лет</option>
+                      <option value="7">7 лет</option>
+                      <option value="8">8 лет</option>
+                      <option value="9">9 лет</option>
+                      <option value="10">10 лет</option>
+                    </select>
+                            </div>
+                            <div class="calc__calc-bet"><span>Процентная ставка</span>
+                                <p>4%</p>
+                            </div>
+                        </div>
+                        <div class="calc__calc-payment">
+                            <span>Ежемесячный платеж</span>
+                            <div class="calc__calc-payment-box">
+                                <p class="calc__calc-sum">0</p>
+                                <p class="card__card-rouble">₽</p>
+                            </div>
+                        </div>
+                        <button class="button calc__button">Заполнить заявку</button>
+                    </div>
+                </div>
+                <!-- /.calc__box -->
+
+            </div>
+
+        </div>
+
+    </section>
     <section></section>
     <section></section>
     <section></section>

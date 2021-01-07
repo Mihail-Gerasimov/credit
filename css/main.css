@@ -34,6 +34,12 @@ p {
     padding: 0;
 }
 
+.row {
+    flex-wrap: nowrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 ul,
 li {
     list-style-type: none;
@@ -159,22 +165,17 @@ button:focus {
 /* header */
 
 .header {
+    border-bottom: 2px solid #3633E1;
     background: url(../img/header/header-fon.png);
     margin-bottom: 120px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -113px;
+    background-position-y: -160px;
+    background-position-x: center;
 }
 
 .woman-money {
-    z-index: -1;
-    right: 0;
-    width: 610px;
-    bottom: 0;
-    z-index: -1;
-    /* width: 580px;
-    margin-top: -168px; */
-    transform: translate(-74%);
+    width: 550px;
+    margin-top: -141px;
 }
 
 .header .container {
@@ -183,7 +184,6 @@ button:focus {
 
 .percent {
     padding-top: 220px;
-    padding-bottom: 170px;
     z-index: 1;
 }
 
@@ -249,7 +249,7 @@ button:focus {
     display: table;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -8px;
 }
 
 .percent__information span {
@@ -258,3 +258,301 @@ button:focus {
 
 
 /* header */
+
+
+/* calc */
+
+.calc {
+    /* padding: 120px 20px; */
+}
+
+.calc__row {
+    height: 530px;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.calc__box {
+    height: 100%;
+}
+
+.calc__card {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 6px;
+    width: 100%;
+    height: 115px;
+}
+
+.calc__card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+    flex-basis: 57%;
+}
+
+.calc__card--blue {
+    background: #E7F4FA;
+    border: 1px solid #BDDCEB;
+}
+
+.calc__card--green {
+    background: #E0F3ED;
+    border: 1px solid #AADCCC;
+}
+
+.calc__card--yellow {
+    background: #FEF7E7;
+    border: 1px solid #E7DABD;
+}
+
+.calc__card--red {
+    background: #FFEBF0;
+    border: 1px solid #E2C0C9;
+}
+
+.calc__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2F2F2F;
+}
+
+.calc__img {
+    margin-right: 35px;
+}
+
+.calc__calc {
+    padding: 45px 60px;
+    background: #FEF7E7;
+    border: 1px solid #E7DABD;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row-input {
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.calc__calc-approval {
+    text-align: center;
+    margin-right: 60px;
+}
+
+.calc__calc-percent {
+    font-style: normal;
+    font-size: 48px;
+    line-height: 56px;
+    color: #3633E1;
+}
+
+.calc__calc-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2F2F2F;
+}
+
+.calc__calc-text--time {
+    margin-bottom: 10px;
+}
+
+.calc__calc-input-group {
+    position: relative;
+}
+
+.calc__calc-input {
+    background: #FFFFFF;
+    border: 1px solid #E7DABD;
+    border-radius: 6px;
+    width: 370px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3633E1;
+    padding: 25px 20px 10px;
+}
+
+.calc__calc-input:hover {
+    border: 1px solid #E7DABD;
+}
+
+.calc__calc-input:focus {
+    outline: none;
+    border: 1px solid #E7DABD;
+}
+
+.calc__calc-label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #818181;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+.calc__calc-card {
+    background: #FFFFFF;
+    border: 1px solid #E7DABD;
+    border-radius: 6px;
+    flex-basis: 17%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #2F2F2F;
+}
+
+.calc__calc-card:hover {
+    background: #3633E1;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.calc__calc-card--active {
+    background: #3633E1;
+    color: #FFFFFF;
+}
+
+.row-calc-card {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.calc__calc-card-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #B4A990;
+    margin: auto;
+}
+
+.calc__calc-offer {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2F2F2F;
+    margin-bottom: 20px;
+}
+
+.calc__calc-bet {
+    background: #FFFFFF;
+    border: 1px solid #3633E1;
+    border-radius: 6px;
+    color: #3633E1;
+    display: flex;
+    padding: 15px 15px;
+}
+
+.calc__calc-bet span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    display: block;
+    max-width: 65px;
+    margin-right: 5px;
+}
+
+.calc__calc-bet p {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.calc__calc-payment {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #5B5B5B;
+    margin-bottom: 5px
+}
+
+.calc__calc-payment-box {
+    display: flex;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #3633E1;
+    justify-content: center;
+}
+
+.calc__calc-sum {
+    margin-right: 5px;
+}
+
+.calc__button {
+    background-color: #fff;
+}
+
+.calc__select-wrap {
+    background: url(../img/calc/arrow.png) no-repeat right #ffffff;
+    border: 1px solid #E7DABD;
+    border-radius: 6px;
+    background-position-x: 94%;
+}
+
+.calc__select {
+    border: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #2F2F2F;
+    padding: 15px 20px 15px 10px;
+    width: 130px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 100%;
+    background: transparent;
+}
+
+.calc__select:focus {
+    outline: none;
+    ;
+}
+
+.calc__select-wrap {
+    display: none;
+}
+
+
+/* calc */

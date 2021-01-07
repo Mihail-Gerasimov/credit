@@ -1,4 +1,42 @@
-@media (max-width: 1200px) {
+@media screen and (max-width: 1750px) {
+    .faster {
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .faster {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .info {
+        padding: 0 20px 130px 20px;
+    }
+    .info-money {
+        width: 70px;
+    }
+    .info__help-img {
+        width: 300px;
+        right: 27%
+    }
+    /* faster */
+    .faster__money--1 {
+        width: 120px;
+        left: -9%;
+    }
+    .faster__money--2 {
+        width: 120px;
+        top: -8%;
+        right: 7%;
+    }
+    .faster__money--3 {
+        width: 120px;
+    }
+}
+
+@media (max-width: 1480px) {
     /* navigation */
     .navbar-brand {
         margin-right: 60px;
@@ -11,9 +49,186 @@
         font-size: 20px;
     }
     /* navigation */
+    /* header */
+    .header {
+        background-position-y: -176px;
+        background-position-x: center;
+        background-size: 1480px;
+    }
+    .percent {
+        padding-top: 140px;
+        z-index: 1;
+    }
+    .percent__one-hundrerd {
+        font-size: 55px;
+        line-height: 67px;
+    }
+    .percent__six {
+        width: 270px;
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .percent__history {
+        margin-bottom: 40px;
+    }
+    .woman-money {
+        height: 450px;
+        width: 370px;
+        margin-top: -93px;
+    }
+    .percent-right-block {
+        margin-right: 40px;
+    }
+    /* header */
+}
+
+@media screen and (max-width: 1350px) {
+    .info-money {
+        display: none;
+    }
+    .info__help-title {
+        font-size: 36px;
+    }
+    .info__help-subtitle {
+        font-size: 24px;
+    }
+    .info__help-text {
+        font-size: 16px;
+    }
+    .info__help-img {
+        right: 33%
+    }
+    /* faster */
+    .faster__money--1 {
+        display: none;
+    }
+    .faster__money--2 {
+        display: none;
+    }
+    .faster__money--3 {
+        display: none;
+    }
+    .faster__col-img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* header */
+    .header {
+        background-position-y: -166px;
+        background-size: 1200px;
+    }
+    .percent {
+        padding-top: 70px;
+    }
+    .percent__one-hundrerd {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .percent__six {
+        width: 235px;
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .percent__history {
+        width: 250px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .woman-money {
+        height: 353px;
+        width: 300px;
+        margin-top: -45px;
+    }
+    .percent__information {
+        width: 281px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    /* header */
+    /* calc */
+    .calc__text {
+        font-size: 16px;
+    }
+    .calc__img {
+        margin-right: 30px;
+    }
+    .calc__calc-payment {
+        font-size: 12px;
+    }
+    .calc__calc-offer {
+        font-size: 16px;
+    }
+    /* calc */
+    /* info */
+    .info__card {
+        padding: 30px 20px 35px 20px;
+    }
+    .info__card-box--left {
+        margin-right: 10px;
+    }
+    .info__help {
+        padding: 70px;
+    }
+    .info__help-img {
+        width: 240px;
+        right: 28%
+    }
+    .info__help-button {
+        padding: 20px 30px;
+    }
+    /* info */
+    /* faster */
+    .faster__col-img {
+        width: 300px;
+    }
+    .faster__col--pink {
+        margin-right: 0;
+    }
+    .faster__col--green {
+        margin-right: 10px;
+    }
+    .faster__row {
+        justify-content: space-between;
+    }
+    /* faster */
+}
+
+@media screen and (max-width: 1000px) {
+    .calc__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .calc__calc-input {
+        font-size: 18px;
+    }
+    .calc__calc {
+        padding: 30px 20px
+    }
+    .calc__calc-approval {
+        margin-right: 30px;
+    }
+    .calc__calc-input {
+        width: 250px;
+    }
+    .calc__card-box {
+        flex-basis: 70%;
+    }
+    .calc__calc-bet {
+        padding: 15px 5px;
+    }
+    .calc__button {
+        padding: 20px 7px;
+    }
+    .calc__calc-text {
+        line-height: 12PX;
+    }
 }
 
 @media (max-width: 992px) {
+    /* navigation */
     .navbar-brand {
         margin-right: 10px;
     }
@@ -26,9 +241,135 @@
     .header__mobile {
         font-size: 15px;
     }
+    /* navigation */
+    /* header */
+    .header {
+        background-position-y: -115px;
+        background-size: 991px;
+    }
+    .percent {
+        padding-top: 35px;
+    }
+    .percent__one-hundrerd {
+        font-size: 33px;
+        line-height: 38px;
+    }
+    .percent__six {
+        width: 235px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .percent__history {
+        width: 240px;
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 23px;
+    }
+    .woman-money {
+        height: 256px;
+        width: 215px;
+        margin-top: 48px;
+    }
+    .percent-right-block {
+        padding-top: 5px;
+        margin-right: 0px;
+    }
+    .percent__information {
+        width: 256px;
+        font-size: 13px;
+        line-height: 21px;
+    }
+    /* header */
+    /* info */
+    .info {
+        padding: 0 20px 60px 20px;
+    }
+    .info__info-container {
+        margin-bottom: 110px;
+    }
+    .info__info-text {
+        font-size: 16px;
+    }
+    .info__card {
+        margin-bottom: 35px;
+    }
+    .row-card {
+        justify-content: center;
+    }
+    .info__card {
+        margin-right: 20px;
+    }
+    .info__section-title {
+        text-align: center;
+    }
+    .info__help {
+        padding: 100px 25px 25px 25px;
+        margin-bottom: 70px;
+    }
+    .info__help-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .info__help-subtitle {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 30px;
+    }
+    .info__help-text {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .info__help-text {
+        max-width: 390px;
+    }
+    /* info */
+    /* faster */
+    .faster {
+        padding-top: 60px;
+    }
+    .faster__ellipse {
+        display: none;
+    }
+    .faste__col-title {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    .faster__col-text {
+        margin-bottom: 20px;
+    }
+    .faster__col-img {
+        width: 200px;
+    }
+    /* faster */
+    /* question */
+    .questions__question-header {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .questions__question-content {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    /* question */
+}
+
+@media screen and (max-width: 850px) {
+    .faster__col-img {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
+    /* navigation */
+    .navigation {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .header-text-top {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 5px 0;
+    }
     .nav-link {
         font-size: 16px;
         padding: 0.2rem 0.5rem !important;
@@ -36,18 +377,361 @@
     .header__mobile {
         font-size: 20px;
     }
+    /* navigation */
+    /* header */
+    .header {
+        border: none;
+        background-position-y: 300px;
+        background-size: auto;
+        background-position-x: -15px;
+        background-size: 767px;
+    }
+    .percent__one-hundrerd {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .percent__one-hundrerd {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .percent__history {
+        width: 320px;
+        margin-bottom: 30px;
+        font-size: 21px;
+        line-height: 23px;
+    }
+    .percent__apply {
+        display: block;
+        margin: 0 auto;
+    }
+    .woman-money {
+        display: none;
+    }
+    .percent-right-block {
+        padding-top: 0px;
+        margin-right: 0px;
+    }
+    .percent__information {
+        width: 360px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    /* header */
+    /* calc */
+    .calc {
+        padding: 30px 0;
+    }
+    .calc__row {
+        flex-direction: column;
+        height: auto;
+    }
+    .calc__card-box {
+        padding: 0 20px;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .calc__card {
+        width: 49%;
+        margin-bottom: 10px;
+        border: none;
+    }
+    .calc__calc {
+        border: none;
+        border-radius: 0;
+    }
+    .calc__calc-bet {
+        padding: 15px 10px;
+    }
+    .calc__button {
+        padding: 20px 50px;
+    }
+    .calc__calc-input {
+        width: 370px;
+    }
+    /* calc */
+    /* info */
+    .info__help {
+        padding-top: 130px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 8px;
+    }
+    .info__card-box--left {
+        margin-right: 25px;
+    }
+    .info__card {
+        padding: 30px 65px 35px 40px;
+    }
+    .info__help-img {
+        display: none;
+    }
+    .info__help-button {
+        display: none;
+    }
+    .info__help-img--mobile {
+        display: block;
+        position: absolute;
+        top: -45px;
+    }
+    .info__help-text {
+        margin-bottom: 40px;
+    }
+    .info__help-connection {
+        display: flex;
+    }
+    /* info */
+    /* question */
+    .questions__img {
+        width: 300px;
+    }
+    .question__title {
+        margin-bottom: 25px;
+    }
+    .questions__box {
+        padding-top: 0;
+    }
+    /* question */
+}
+
+@media screen and (max-width: 700px) {
+    /* faster */
+    .faster {
+        padding-top: 60px;
+    }
+    .faster__ellipse {
+        display: none;
+    }
+    .faster__row {
+        align-items: center;
+    }
+    .faster__title {
+        margin: auto;
+        margin-bottom: 40px;
+        max-width: 280px;
+    }
+    .faster__title h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .faster__col--pink {
+        margin-right: 0;
+        background-image: none;
+        background: #FFEBF0;
+        border-radius: 6px;
+        width: 280px;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 30px 20px;
+        height: auto;
+    }
+    .faster__col--green {
+        background-image: none;
+        background: #E0F3ED;
+        border-radius: 6px;
+        width: 280px;
+        padding: 30px 20px;
+        margin-right: 0;
+    }
+    .faster__container {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .faster__row {
+        flex-direction: column;
+    }
+    .faster__col--pink {
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 576px) {
+    /* navigation */
     .header-text-top {
         font-size: 18px;
     }
+    /* navigation */
+    /* header */
+    .header {
+        background-position-y: 144px;
+    }
+    .percent__one-hundrerd {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .percent__six {
+        width: 265px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .percent__history {
+        width: 244px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .percent__apply {
+        display: none;
+    }
+    .percent__information {
+        width: 250px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .percent-fixed {
+        bottom: 25px;
+    }
+    .btn-phone__number {
+        padding: 18px;
+        background: #DB4886;
+        box-sizing: border-box;
+        border-radius: 6px;
+    }
+    /* header */
+    /* calc */
+    .calc__calc {
+        width: 100%;
+        position: relative;
+    }
+    .calc__card-box {
+        flex-direction: column;
+    }
+    .calc__card {
+        width: 100%;
+        padding: 20px
+    }
+    .row-input {
+        flex-direction: column;
+        align-items: center;
+    }
+    .calc__calc-approval {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .calc__calc-input-group {
+        width: 100%;
+    }
+    .calc__calc-input {
+        width: 100%;
+    }
+    .calc__row {
+        height: auto;
+    }
+    .row-payment {
+        flex-direction: column;
+        align-items: center;
+    }
+    .calc__button {
+        width: 100%;
+    }
+    .calc__calc-bet-wrap {
+        margin-bottom: 70px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .calc__calc-bet {
+        width: 130px;
+    }
+    .calc__calc-payment {
+        margin-bottom: 30px;
+    }
+    .row-calc-card {
+        display: none;
+    }
+    .calc__calc-offer {
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 60%;
+    }
+    .calc__img img {
+        width: 50px;
+    }
+    .calc__select-wrap {
+        display: block;
+    }
+    /* calc */
+    /* info */
+    .info {
+        background-image: none;
+        padding-right: 0;
+    }
+    .info__info-text {
+        max-width: 97%;
+        margin-bottom: 40px;
+    }
+    .info__info-img-box {
+        display: none;
+    }
+    .info__info-img {
+        display: none;
+    }
+    .info__slider-wrap {
+        display: block;
+    }
+    .info__help-wrap {
+        padding-right: 20px;
+    }
+    .info__help {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .info__help-text {
+        max-width: 256px;
+    }
+    .info__section-title {
+        text-align: left;
+        max-width: 278px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .info__section-title--top {
+        margin-left: 0;
+    }
+    .info__help-subtitle {
+        max-width: 200px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .info__card {
+        margin-right: 0;
+        border: none;
+        padding: 0;
+    }
+    .section-title h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .section-title p {
+        font-size: 24px;
+    }
+    .info__help-text--first {
+        display: inline;
+    }
+    /* info */
+    /* question */
+    .questions__img {
+        display: none;
+    }
+    .question__title {
+        max-width: 200px;
+    }
+    .questions__box {
+        flex-basis: 100%;
+    }
+    /* question */
 }
 
 @media (max-width: 425px) {
+    /* navigation */
     .header-text-top {
         font-size: 14px;
     }
+    /* navigation */
 }
 
 @media (max-width: 326px) {}
