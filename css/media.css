@@ -419,6 +419,7 @@
     /* header */
     /* calc */
     .calc {
+        margin-bottom: 100px;
         padding: 30px 0;
     }
     .calc__row {
@@ -450,6 +451,12 @@
         width: 370px;
     }
     /* calc */
+    /* arrange */
+    .arrange-title {
+        width: 310px;
+        margin-bottom: 40px;
+    }
+    /* arrange */
     /* info */
     .info__help {
         padding-top: 130px;
@@ -591,6 +598,9 @@
     }
     /* header */
     /* calc */
+    .calc {
+        margin-bottom: 60px;
+    }
     .calc__calc {
         width: 100%;
         position: relative;
@@ -655,6 +665,11 @@
         display: block;
     }
     /* calc */
+    /* arrange */
+    .arrange-title {
+        width: 270px;
+    }
+    /* arramge */
     /* info */
     .info {
         background-image: none;
@@ -732,6 +747,40 @@
         font-size: 14px;
     }
     /* navigation */
+    /* arrange */
+    .arrange-block {
+        display: none !important;
+    }
+    .arrange-slider__block {
+        display: block !important;
+    }
+    .arrange-slider__block .slick-slide {
+        margin: 0 10px;
+    }
+    .arrange-section__card {
+        height: 205px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .arrange-section__card img {
+        width: 55px;
+        height: 55px;
+        margin-bottom: 8px;
+    }
+    .arange-title {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .arrange-section--list {
+        font-size: 13px;
+        line-height: 14px;
+    }
+    .arrange-section--list li::after {
+        top: 6px;
+        left: 6px;
+    }
+    /* arrange */
 }
 
 @media (max-width: 326px) {}

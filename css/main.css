@@ -113,6 +113,40 @@ button:focus {
     }
 }
 
+.medium-title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.medium-title span {
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 49px;
+}
+
+@media (max-width: 767px) {
+    .medium-title {
+        font-size: 27px;
+        line-height: 32px;
+    }
+    .medium-title span {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .medium-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .medium-title span {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
 
 /* navigation */
 
@@ -263,6 +297,7 @@ button:focus {
 /* calc */
 
 .calc {
+    margin-bottom: 150px;
     /* padding: 120px 20px; */
 }
 
@@ -518,7 +553,31 @@ button:focus {
 }
 
 .calc__button {
+    background-color: transparent;
+    border: 1px solid #3633E1;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #3633E1;
+    padding: 20px 50px;
+    cursor: pointer;
     background-color: #fff;
+    transition: 0.3s;
+}
+
+.calc__button:focus {
+    outline: none;
+    border: 1px solid #3633E1;
+}
+
+.calc__button:hover {
+    border: 1px solid #3633E1;
+    background-color: #3633E1;
+    color: #FFFFFF;
+    transition: 0.3s;
 }
 
 .calc__select-wrap {
@@ -556,3 +615,74 @@ button:focus {
 
 
 /* calc */
+
+
+/* arrange */
+
+.arrange {
+    margin-bottom: 150px;
+}
+
+.arrange-title {
+    margin-bottom: 60px;
+    width: 370px;
+}
+
+.arrange-block {
+    display: block;
+}
+
+.arrange-section__card {
+    border: 1px solid #AFAFAF;
+    border-radius: 6px;
+    height: 190px;
+    width: 380px;
+}
+
+.arange-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 17px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.arrange-secton--subblock {
+    padding-left: 40px;
+}
+
+.arrange-secton--subblock img {
+    margin-right: 20px;
+    height: 68px;
+    width: 68px;
+}
+
+.arrange-section--list {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-indent: 16px;
+    padding-top: 3px;
+}
+
+.arrange-section--list li {
+    display: block;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.arrange-section--list li::after {
+    content: '';
+    display: table;
+    position: absolute;
+    background: #7A89C0;
+    border-radius: 6px;
+    width: 4px;
+    height: 4px;
+    top: 7px;
+    left: 6px;
+}
+
+
+/* arrange */

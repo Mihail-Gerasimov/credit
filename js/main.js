@@ -143,3 +143,15 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+if ($(window).width() < 426) {
+    $('.single-item').slick({
+        infinite: false,
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '30px'
+    });
+}
