@@ -15,6 +15,61 @@
     }
 }
 
+@media screen and (max-width: 1590px) {
+    /* poll */
+    .poll-card {
+        display: flex;
+        justify-content: center;
+    }
+    .substrate-quiz {
+        width: 1109px;
+        height: 530px;
+        top: 25px;
+    }
+    .poll-quiz {
+        width: 1070px;
+        height: 580px;
+        margin-left: 0;
+    }
+    .gig-cash {
+        width: 530px;
+        height: 486px;
+        margin-right: 50px;
+    }
+    .title-quiz {
+        font-size: 39px;
+        line-height: 45px;
+        margin-bottom: 22px;
+    }
+    .pool-quiz__text {
+        font-size: 20px;
+        line-height: 24px;
+        width: 400px;
+        margin-bottom: 30px;
+    }
+    .subtitle-quiz {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 30px;
+    }
+    .btn-group {
+        margin-bottom: 25px;
+    }
+    .btn-secondary {
+        width: 220px;
+    }
+    .btn-further {
+        padding: 17px 70px;
+    }
+    .kupyra {
+        bottom: -38px;
+        right: -23px;
+        width: 151px;
+        height: 135px;
+    }
+    /* poll */
+}
+
 @media screen and (max-width: 1500px) {
     .info {
         padding: 0 20px 130px 20px;
