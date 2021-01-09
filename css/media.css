@@ -248,6 +248,50 @@
         padding: 20px 30px;
     }
     /* info */
+    /* poll */
+    .poll {
+        margin-top: -20px;
+    }
+    .substrate-quiz {
+        width: 640px;
+        height: 555px;
+    }
+    .poll-quiz {
+        width: 600px;
+        height: auto;
+        justify-content: center;
+    }
+    .gig-cash {
+        display: none;
+    }
+    .poll-quiz--right {
+        margin: 40px 0 40px 0;
+    }
+    .subtitle-quiz {
+        width: 350px;
+    }
+    .btn-secondary {
+        font-size: 13px;
+        line-height: 15px;
+        width: 194px;
+    }
+    .quiz-back {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 13px 25px;
+    }
+    .btn-further {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 14px 60px;
+    }
+    .kupyra {
+        bottom: -11px;
+        right: -47px;
+        width: 107px;
+        height: 105px;
+    }
+    /* poll */
     /* faster */
     .faster__col-img {
         width: 300px;
@@ -567,6 +611,18 @@
         padding-top: 0;
     }
     /* question */
+    /* poll */
+    .title-quiz {
+        width: 400px;
+    }
+    .substrate-quiz {
+        width: 500px;
+        height: 555px;
+    }
+    .poll-quiz {
+        width: 460px;
+    }
+    /* poll */
 }
 
 @media screen and (max-width: 700px) {
@@ -838,6 +894,59 @@
         flex-basis: 100%;
     }
     /* question */
+    /* poll */
+    .poll .container {
+        padding: 0;
+    }
+    .substrate-quiz {
+        display: none;
+    }
+    .poll-quiz {
+        width: 100%;
+        border-radius: inherit;
+        border: none;
+        background: #FFEBF0;
+    }
+    .poll-quiz--right {
+        margin: 40px 22px;
+    }
+    .title-quiz {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 12px;
+        width: 250px;
+    }
+    .pool-quiz__text {
+        font-size: 14px;
+        line-height: 16px;
+        width: 240px;
+        margin-bottom: 20px
+    }
+    .quiz-back {
+        border: none;
+        text-decoration: underline;
+        color: #DAADB8;
+        background: none;
+        padding: 13px 0;
+        margin-right: 58px;
+    }
+    .subtitle-quiz {
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 30px;
+        width: 275px;
+    }
+    .btn-group {
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .btn-secondary {
+        width: 275px;
+    }
+    .kupyra {
+        display: none;
+    }
+    /* poll */
 }
 
 @media (max-width: 425px) {

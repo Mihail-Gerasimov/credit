@@ -1022,14 +1022,15 @@ button:focus {
 .btn-secondary {
     flex: inherit !important;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 21px;
     color: #8F8F8F;
     background: #FFFFFF;
     border: 1px solid #C6C6C6;
     border-radius: 6px !important;
     width: 270px;
-    padding: 15px 0 !important;
+    padding: 15px 0 15px 20px !important;
+    text-align: start;
 }
 
 .btn-secondary:hover {
@@ -1052,6 +1053,18 @@ button:focus {
     border-color: #DB4886 !important;
     outline: none !important;
     box-shadow: none !important;
+}
+
+.quiz-back {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    background: #EFEFEF;
+    border: 1px solid #C2C2C2;
+    border-radius: 6px;
+    padding: 15px 35px;
+    color: #9B9B9B;
+    margin-right: 20px;
 }
 
 .btn-further {

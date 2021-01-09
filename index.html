@@ -489,7 +489,9 @@
     </section>
     <section class="poll mb-5">
         <div class="container">
-            <div class="poll-card position-relative">
+
+            <!-- 1 card -->
+            <div class="poll-card position-relative" style="display: none;">
                 <div class="substrate-quiz position-absolute"></div>
                 <div class="poll-quiz position-relative d-flex align-items-center">
 
@@ -507,25 +509,127 @@
                             <label class="btn-quiz btn btn-secondary mb-3">
                           <input type="radio" name="options" id="option2">Автокредит
                         </label>
-                            <label class="btn-quiz btn btn-secondary mb-3 mr-3">
+                            <label class="btn-quiz btn btn-secondary ">
                           <input type="radio" name="options" id="option3">Карта рассрочки
                         </label>
-                            <label class="btn-quiz btn btn-secondary">
-                            <input type="radio" name="options" id="option3">Карта рассрочки
-                          </label>
+                        </div>
+
+                        <div class="quiz-bottim__block d-flex">
+                            <button class="btn-further">Далее</button>
+                        </div>
+                        <img class="kupyra position-absolute" src="./img/poll/kupyra.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 card -->
+            <div class="poll-card position-relative" style="display: none;">
+                <div class="substrate-quiz position-absolute"></div>
+                <div class="poll-quiz position-relative d-flex align-items-center">
+
+                    <img class="gig-cash" src="./img/poll/big-cash.png" alt="деньги">
+
+                    <div class="poll-quiz--right">
+                        <h3 class="title-quiz">Узнать ставку сейчас</h3>
+                        <p class="pool-quiz__text">Пройдите небольшой тест и узнайте свою ставку по кредиту (всего 3 вопроса)</p>
+                        <h4 class="subtitle-quiz">Укажите сумму кредита?</h4>
+
+                        <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
+                            <label class="btn-quiz btn btn-secondary active mb-3 mr-0 mr-md-3">
+                          <input type="radio" name="options" id="option1" checked>От 100 000 до 500 000 руб.
+                        </label>
                             <label class="btn-quiz btn btn-secondary mb-3">
-                            <input type="radio" name="options" id="option3">Карта рассрочки
-                          </label>
-                            <label class="btn-quiz btn btn-secondary mb-3">
-                            <input type="radio" name="options" id="option3">Карта рассрочки
-                          </label>
-                            <label class="btn-quiz btn btn-secondary">
-                            <input type="radio" name="options" id="option3">Карта рассрочки
+                          <input type="radio" name="options" id="option2">От 500 000 до 1 000 000 руб.
+                        </label>
+                            <label class="btn-quiz btn btn-secondary mb-3 ">
+                          <input type="radio" name="options" id="option3">От 1 мил. до 10 млн. руб.
+                        </label>
+                            <label class="btn-quiz btn btn-secondary ">
+                            <input type="radio" name="options" id="option4">Более 10 млн. руб.
                           </label>
                         </div>
 
-                        <button class="btn-further">Далее</button>
+                        <div class="quiz-bottim__block d-flex">
+                            <button class="quiz-back">Назад</button>
+                            <button class="btn-further">Далее</button>
+                        </div>
+                        <img class="kupyra position-absolute" src="./img/poll/kupyra.png" alt="">
+                    </div>
+                </div>
+            </div>
 
+            <!-- 3 card -->
+            <div class="poll-card position-relative" style="display: none;">
+                <div class="substrate-quiz position-absolute"></div>
+                <div class="poll-quiz position-relative d-flex align-items-center">
+
+                    <img class="gig-cash" src="./img/poll/big-cash.png" alt="деньги">
+
+                    <div class="poll-quiz--right">
+                        <h3 class="title-quiz">Узнать ставку сейчас</h3>
+                        <p class="pool-quiz__text">Пройдите небольшой тест и узнайте свою ставку по кредиту (всего 3 вопроса)</p>
+                        <h4 class="subtitle-quiz">Какой вид кредита вас интересует?</h4>
+
+                        <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
+                            <label class="btn-quiz btn btn-secondary active mb-3 mr-3">
+                          <input type="radio" name="options" id="option1" checked>Плохая кредитная история
+                        </label>
+                            <label class="btn-quiz btn btn-secondary mb-3">
+                          <input type="radio" name="options" id="option2">Неоф. трудоустройство
+                        </label>
+                            <label class="btn-quiz btn btn-secondary mb-3 ">
+                          <input type="radio" name="options" id="option3">Судимость
+                        </label>
+                            <label class="btn-quiz btn btn-secondary mb-3 mb-md-0">
+                            <input type="radio" name="options" id="option4">Не проблем
+                          </label>
+                            <label class="btn-quiz btn btn-secondary mb-3">
+                            <input type="radio" name="options" id="option5">Отсутствие прописки
+                          </label>
+                            <label class="btn-quiz btn btn-secondary mb-3">
+                            <input type="radio" name="options" id="option6">Кредит с просрочками
+                          </label>
+                            <label class="btn-quiz btn btn-secondary ">
+                            <input type="radio" name="options" id="option7">Отказали банки
+                          </label>
+                        </div>
+
+                        <div class="quiz-bottim__block d-flex">
+                            <button class="quiz-back">Назад</button>
+                            <button class="btn-further">Далее</button>
+                        </div>
+                        <img class="kupyra position-absolute" src="./img/poll/kupyra.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 card -->
+            <div class="poll-card position-relative">
+                <div class="substrate-quiz position-absolute"></div>
+                <div class="poll-quiz position-relative d-flex align-items-center">
+
+                    <img class="gig-cash" src="./img/poll/big-cash.png" alt="деньги">
+
+                    <div class="poll-quiz--right">
+                        <h3 class="title-quiz">Предварительно одобрен</h3>
+
+                        <div class="credit-at-rate d-flex align-items-center">
+                            <h3 class="at-rare__title">кредит по ставке 6% годовых</h3>
+                            <img src="./img/poll/quiz-money.png" alt="" class="at-rate__money">
+                        </div>
+
+                        <p class="quiz-text--information">Мы работаем с самыми крупными банками России, вероятность одобрения кредита с нашей помощью составляет 99%! <span>Успей получить кредит сейчас!</span></p>
+
+                        <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
+                            <label>
+                          <input type="number" placeholder="+ 7 (___) ___ - __ - __" name="options" id="option1">
+                        </label>
+                        </div>
+
+                        <div class="quiz-bottim__block d-flex">
+
+                            <button class="btn-further" style="padding: 15px 30px;">Оставить заявку</button>
+                        </div>
                         <img class="kupyra position-absolute" src="./img/poll/kupyra.png" alt="">
                     </div>
                 </div>
