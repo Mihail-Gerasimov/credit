@@ -21,7 +21,7 @@
         </p>
 
         <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="#"><img src="./img/header/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <img src="./img/header/burger.png" alt="menu">
@@ -30,22 +30,22 @@
                 <div class="collapse navbar-collapse d-print-flex d-md-flex align-items-center align-items-md-start" id="navbarSupportedContent">
                     <ul class="header__list-item align-items-center justify-content-center flex-column flex-md-row d-md-flex">
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Преимущества</a>
+                            <a class="nav-link disabled" href="#arrange">Преимущества</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Условия</a>
+                            <a class="nav-link disabled" href="#get">Условия</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">О компании</a>
+                            <a class="nav-link disabled" href="#info">О компании</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Как получить</a>
+                            <a class="nav-link disabled" href="#check">Как получить</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">FAQ</a>
+                            <a class="nav-link disabled" href="#faster">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Отзывы</a>
+                            <a class="nav-link disabled" href="#back">Отзывы</a>
                         </li>
                     </ul>
                     <a class="header__mobile d-block d-md-none" href="tel:8 800 800 80 80">8 800 800 80 80</a>
@@ -177,7 +177,7 @@
         </div>
 
     </section>
-    <section class="arrange">
+    <section id="arrange" class="arrange">
         <div class="container">
 
             <h2 class="medium-title arrange-title pl-md-2 pl-xl-0">
@@ -324,7 +324,7 @@
             </div>
         </div>
     </section>
-    <section class="get">
+    <section id="get" class="get">
         <div class="container">
             <h2 class="medium-title get-title pl-md-2 pl-xl-0">
                 <span>Поможем получить кредит, </span>даже если у вас:
@@ -373,7 +373,7 @@
             </div>
         </div>
     </section>
-    <section class="info">
+    <section id="info" class="info">
         <div class="info-money"><img src="img/information/money.jpg" alt="money"></div>
         <div class="container info__info-container">
 
@@ -435,7 +435,7 @@
         </div>
         <!-- /.info__help -->
 
-        <div class="container">
+        <div id="check" class="container">
             <h2 class="medium-title infor-title pl-md-2 pl-xl-0">
                 <span>Просто </span><br>как "раз-два-три"
             </h2>
@@ -487,11 +487,11 @@
         </div>
 
     </section>
-    <section class="poll mb-5">
+    <section id="click" class="poll mb-5">
         <div class="container">
 
             <!-- 1 card -->
-            <div class="poll-card position-relative" style="display: none;">
+            <div class="poll-card position-relative">
                 <div class="substrate-quiz position-absolute"></div>
                 <div class="poll-quiz position-relative d-flex align-items-center">
 
@@ -604,39 +604,160 @@
             </div>
 
             <!-- 4 card -->
-            <div class="poll-card position-relative">
+            <div class="poll-card position-relative" style="display: none;">
                 <div class="substrate-quiz position-absolute"></div>
                 <div class="poll-quiz position-relative d-flex align-items-center">
 
                     <img class="gig-cash" src="./img/poll/big-cash.png" alt="деньги">
 
                     <div class="poll-quiz--right">
-                        <h3 class="title-quiz">Предварительно одобрен</h3>
+                        <h3 class="title-quiz">Предварительно<br>одобрен</h3>
 
                         <div class="credit-at-rate d-flex align-items-center">
                             <h3 class="at-rare__title">кредит по ставке 6% годовых</h3>
                             <img src="./img/poll/quiz-money.png" alt="" class="at-rate__money">
                         </div>
 
-                        <p class="quiz-text--information">Мы работаем с самыми крупными банками России, вероятность одобрения кредита с нашей помощью составляет 99%! <span>Успей получить кредит сейчас!</span></p>
+                        <p class="quiz-text--info__top">Мы работаем с самыми крупными банками России, вероятность одобрения кредита с нашей помощью составляет 99%!</p>
+                        <p class="quiz-text--info__bottom">Успей получить кредит сейчас!</p>
 
-                        <div class="btn-group btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
-                            <label>
-                          <input type="number" placeholder="+ 7 (___) ___ - __ - __" name="options" id="option1">
+                        <div class="btn-group h-auto btn-group-toggle d-flex flex-column flex-wrap" data-toggle="buttons">
+                            <label class="btn-quiz">
+                          <input class="input--number" type="number" placeholder="+ 7 (___) ___ - __ - __" name="options" id="option1">
                         </label>
                         </div>
 
                         <div class="quiz-bottim__block d-flex">
-
                             <button class="btn-further" style="padding: 15px 30px;">Оставить заявку</button>
                         </div>
+
                         <img class="kupyra position-absolute" src="./img/poll/kupyra.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="faster" class="faster">
+        <div class="faster__ellipse"><img src="img/faster/Ellipse.png" alt="ellipse"></div>
+        <div class="container faster__container">
+            <div class="section-title faster__title">
+                <h3>Быстрее, лучше, выгоднее</h3>
+            </div>
 
+            <div class="row faster__row">
+
+                <div class="faster__money--1"><img src="img/faster/money.png" alt="money"></div>
+                <div class="faster__money--2"><img src="img/faster/money1.png" alt="money"></div>
+                <div class="faster__money--3"><img src="img/faster/money2.png" alt="money"></div>
+
+                <div class="faster__col faster__col--pink">
+                    <h4 class="faste__col-title faste__col-title--red">ВЫ ОБРАТИЛИСЬ В БАНК</h4>
+                    <p class="faster__col-text">Потратили на это 2-3 дня, оставили много времени и сил в банках на оформление необходимых документов. Получили отказы</p>
+                    <ul class="faster__ul">
+                        <li>Одобренная сумма - <strong>600 000</strong> руб.</li>
+                        <li>Ставка- <strong>19%</strong> годовых</li>
+                        <li>Страховка - <strong>10%</strong> от суммы</li>
+                        <li>Получили на руки - <strong>540 000</strong> руб.</li>
+                        <li>Платеж - <strong>17 600</strong> рублей</li>
+                    </ul>
+                </div>
+                <!-- /.faster__col -->
+                <div class="faster__col faster__col--green">
+                    <h4 class="faste__col-title faste__col-title--gren">ВЫ ОБРАТИЛИСЬ К НАМ</h4>
+                    <p class="faster__col-text">Мы оформляем все документы. За один день мы получаем положительные решения банков партнеров и Вы выбираете из них выгодное предложение</p>
+                    <ul class="faster__ul">
+                        <li>Одобренная сумма - <strong>600 000</strong> руб.</li>
+                        <li>Ставка- <strong>4%</strong> годовых</li>
+                        <li>Страховка - <strong>0%</strong> от суммы</li>
+                        <li>Получили на руки - <strong>600 000</strong> руб.</li>
+                        <li>Платеж - <strong>9 500</strong> рублей</li>
+                    </ul>
+                </div>
+                <!-- /.faster__col -->
+
+                <div class="faster__col-img"><img src="img/faster/Shape.jpg" alt="shape"></div>
+            </div>
+            <!-- /.row -->
+        </div>
+
+        <div class="questions">
+            <div class="questions__container">
+                <div class="row">
+                    <div class="questions__img"><img src="img/faster/money_girl.png" alt="money girl"></div>
+
+                    <div class="questions__box">
+                        <div class="section-title question__title">
+                            <h3>Остались вопросы?</h3>
+                        </div>
+
+                        <div class="questions__accordion">
+                            <div class="questions__question">
+                                <div class="questions__question-header questions__question-header--active">Как мне получить скидку на услуги?</div>
+                                <div class="questions__question-content questions__question-content--active">Если Вы повторно обращаетесь к нам или даёте рекомендацию знакомым, то получаете скидку 10% на наши услуги</div>
+                            </div>
+                            <div class="questions__question">
+                                <div class="questions__question-header">Какие документы необходимы для получения кредита?</div>
+                                <div class="questions__question-content">Если Вы повторно обращаетесь к нам или даёте рекомендацию знакомым, то получаете скидку 10% на наши услуги</div>
+                            </div>
+                            <div class="questions__question">
+                                <div class="questions__question-header">Какие требования к заемщику?</div>
+                                <div class="questions__question-content">Если Вы повторно обращаетесь к нам или даёте рекомендацию знакомым, то получаете скидку 10% на наши услуги</div>
+                            </div>
+                            <div class="questions__question">
+                                <div class="questions__question-header">Нужно ли оплачивать Ваши услуги при отрицательном решении банка?</div>
+                                <div class="questions__question-content">Если Вы повторно обращаетесь к нам или даёте рекомендацию знакомым, то получаете скидку 10% на наши услуги</div>
+                            </div>
+                            <div class="questions__question">
+                                <div class="questions__question-header">У меня плоха кредитная история, постоянно отказывают банки, вы можете мне помочь?</div>
+                                <div class="questions__question-content">Если Вы повторно обращаетесь к нам или даёте рекомендацию знакомым, то получаете скидку 10% на наши услуги</div>
+                            </div>
+                        </div>
+                        <!-- /.question__accordion -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.faster-questions -->
+
+    </section>
+    <section id="back" class="video-reviews"></section>
+    <section class="footer">
+        <div class="container">
+
+            <div class="footer-big--block">
+
+                <div class="footer-main">
+                    <div class="footer-main__top">
+                        <img src="./img/footer/logo-white.png" alt="">
+                        <ul class="main__top--list">
+                            <li><a href="#arrange">Преимущества</a></li>
+                            <li><a href="#get">Условия</a></li>
+                            <li><a href="#info">О компании</a></li>
+                            <li><a href="#check">Как получить</a></li>
+                            <li><a href="#faster">FAQ</a></li>
+                            <li><a href="#back">Отзывы</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-main__bottom">
+                        <div class="schedule">
+                            <p class=" mb-3">График работы:</p>
+                            <p class="schedule--time">ПН - СБ 8:00 - 21:00
+                            </p>
+                        </div>
+                        <p class="schedule--address">
+                            г. Казань, ул. Кремлевская, д. 12, оф. 512
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-text">
+                    <p class="text-footer mb-4">Не является публичной офертой </p>
+                    <p class="text-footer__bottom">Не является публичной офертой Подбор кредитно-финансовых услуг, квалифицированная помощь юристов</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

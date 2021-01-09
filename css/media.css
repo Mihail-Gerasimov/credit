@@ -41,6 +41,12 @@
         line-height: 45px;
         margin-bottom: 22px;
     }
+    .credit-at-rate {
+        margin-bottom: 20px;
+    }
+    .quiz-text--info__bottom {
+        margin-bottom: 20px;
+    }
     .pool-quiz__text {
         font-size: 20px;
         line-height: 24px;
@@ -270,6 +276,14 @@
     .subtitle-quiz {
         width: 350px;
     }
+    .at-rare__title {
+        width: 140px;
+    }
+    .quiz-text--info__top {
+        width: 280px;
+        font-size: 12px;
+        line-height: 14px;
+    }
     .btn-secondary {
         font-size: 13px;
         line-height: 15px;
@@ -306,6 +320,17 @@
         justify-content: space-between;
     }
     /* faster */
+    /* footer */
+    .footer-main__top img {
+        margin-right: 30px;
+    }
+    .main__top--list li a {
+        margin-right: 10px;
+    }
+    .schedule {
+        margin-right: 78px;
+    }
+    /* footer */
 }
 
 @media screen and (max-width: 1000px) {
@@ -463,6 +488,75 @@
         line-height: 16px;
     }
     /* question */
+    /* footer */
+    .footer-big--block {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 110px;
+    }
+    .footer-main {
+        margin-bottom: 40px;
+        flex-direction: row;
+    }
+    .footer-main__top {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+        align-items: start;
+        flex-direction: column;
+    }
+    .footer-main__top img {
+        width: 136px;
+        height: 35px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .main__top--list {
+        flex-direction: column;
+    }
+    .main__top--list li {
+        margin-bottom: 10px;
+    }
+    .main__top--list li:last-child {
+        margin-bottom: 0px;
+    }
+    .main__top--list li a {
+        margin-right: 0px;
+    }
+    .main__top--list::before {
+        width: 287px;
+        bottom: -30px;
+    }
+    .footer-main__bottom {
+        padding-top: 67px;
+        flex-direction: column;
+    }
+    .schedule {
+        margin-bottom: 35px;
+        margin-right: 0px;
+        position: relative;
+    }
+    .schedule::before {
+        content: '';
+        display: table;
+        width: 148px;
+        height: 1px;
+        position: absolute;
+        bottom: -19px;
+        background-color: #4C8CC8;
+    }
+    .schedule--time {
+        width: 85px;
+    }
+    .schedule--address {
+        width: 150px;
+        font-size: 14px;
+    }
+    .footer-text {
+        text-align: center;
+    }
+    /* footer */
 }
 
 @media screen and (max-width: 850px) {
