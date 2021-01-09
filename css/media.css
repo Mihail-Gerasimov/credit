@@ -567,6 +567,14 @@
 
 @media (max-width: 767px) {
     /* navigation */
+    .navbar {
+        background-color: #fff;
+        z-index: 10;
+        top: 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
     .navigation {
         display: flex;
         flex-direction: column-reverse;
@@ -574,7 +582,7 @@
     .header-text-top {
         font-size: 18px;
         line-height: 22px;
-        padding: 5px 0;
+        padding: 65px 0 5px 0;
     }
     .nav-link {
         font-size: 16px;
