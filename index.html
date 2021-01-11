@@ -15,8 +15,61 @@
 </head>
 
 <body>
+    <!-- modal -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <button pt-0 pb-0 type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="pr-4" aria-hidden="true">Закрыть</span>
+          </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="modal-body--content d-flex justify-content-between">
+                        <div class="modal-body--content__left">
+                            <h5 class="modal-title title-modal mb-3" id="staticBackdropLabel">Хочу заявки!</h5>
+                            <p class="modal-body__text">
+                                Для получения заявок, оставьте номер телефона и ваше имя. Наш менеджер расскажет вам все подробнее.
+                            </p>
+                            <form action="" class="d-flex flex-column mb-4">
+                                <input class="mb-4 pl-4 py-3 style-input" type="text" placeholder="Ваше Имя">
+                                <input class=" pl-4 py-3 style-input" type="text" placeholder="+7 (___) ___ - __ - __">
+                            </form>
+                            <label class="label-radio">
+                                <input type="checkbox" name="people-number " class="real-radio "> 
+                                <div class="custom-radio"><img src="./img/modal/chek.svg" alt=""></div>
+                                <p class="custom-radio--text">Согласие на обработку своих персональных данных</p>
+                            </label>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary bg-pink">Хочу заявки!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-thanks" style="display: none;">
+        <div class="modal-thanks__grey position-absolute"></div>
+        <div class="modal-thanks__content d-flex flex-column align-items-center justify-content-center">
+            <img class="mb-5" src="./img/modal/green.png" alt="">
+            <h5 class="modal-title title-modal mb-5 text-center" id="staticBackdropLabel">Заявка<br>отправлена
+            </h5>
+            <p class="thanks__content--text">
+                Мы получили вашу заявку.<br>Наш менеджер свяжится с вами.
+            </p>
+        </div>
+        <div class="modal-thanks__pink position-absolute"></div>
+    </div>
+    <!-- modal -->
+
+
     <section class="navigation">
-        <p class="header-text-top">
+        <p class="header-text-top" data-toggle="modal" data-target="#staticBackdrop">
             Помощь в получении кредита в Казани
         </p>
 
@@ -55,7 +108,6 @@
             </nav>
         </div>
     </section>
-
     <section class="header">
         <div class="container">
             <div class="percent position-relative align-items-center align-items-md-start flex-column flex-md-row d-flex justify-content-center justify-content-md-between px-2">
@@ -65,7 +117,7 @@
                         <h1 class="percent__one-hundrerd">Получите <span>100%</span></h1>
                         <h2 class="percent__six mb-2">одобрение по ставке от <span>6%</span></h2>
                         <p class="percent__history">Даже с испорченной кредитной <br> историей!</p>
-                        <button class="percent__apply">Подать заявку</button>
+                        <button class="percent__apply" data-toggle="modal" data-target="#staticBackdrop">Подать заявку</button>
                     </div>
                     <!-- <img class="woman-money " src="./img/header/woman-money.png" alt="woman"> -->
                 </div>
@@ -77,7 +129,7 @@
                     <p class="percent__information"><span>Кредит на любые цели</span> <br> Кредит на выгодных условиях и без дополнительных услуг</p>
                 </div>
                 <div class="percent-fixed position-fixed d-flex d-sm-none">
-                    <button class="percent__apply d-block mr-2">Подать заявку</button>
+                    <button class="percent__apply d-block mr-2" data-toggle="modal" data-target="#staticBackdrop">Подать заявку</button>
                     <div class="btn-phone__number">
                         <a class="" href="tel:8 800 800 80 80"><img src="./img/header/phone-btn-mobile.png" alt="phone"></a>
                     </div>
@@ -167,7 +219,7 @@
                                 <p class="card__card-rouble">₽</p>
                             </div>
                         </div>
-                        <button class="button calc__button">Заполнить заявку</button>
+                        <button class="button calc__button" data-toggle="modal" data-target="#staticBackdrop">Заполнить заявку</button>
                     </div>
                 </div>
                 <!-- /.calc__box -->
@@ -429,7 +481,7 @@
 
                 <div class="info__help-img"><img src="img/information/money1.png" alt="money"></div>
 
-                <button class="button info__help-button">Заполнить заявку</button>
+                <button class="button info__help-button" data-toggle="modal" data-target="#staticBackdrop">Заполнить заявку</button>
 
             </div>
         </div>
@@ -697,19 +749,19 @@
                             </div>
                             <div class="questions__question">
                                 <div class="questions__question-header">Какие документы необходимы для получения кредита?</div>
-                                <div class="questions__question-content">Если Вы повторно обращаетесь к нам или даёте рекомендацию знакомым, то получаете скидку 10% на наши услуги</div>
+                                <div class="questions__question-content">Нам необходим только паспорт. Справка 2-НДФЛ не обязательна</div>
                             </div>
                             <div class="questions__question">
                                 <div class="questions__question-header">Какие требования к заемщику?</div>
-                                <div class="questions__question-content">Если Вы повторно обращаетесь к нам или даёте рекомендацию знакомым, то получаете скидку 10% на наши услуги</div>
+                                <div class="questions__question-content">Только ваше желание</div>
                             </div>
                             <div class="questions__question">
                                 <div class="questions__question-header">Нужно ли оплачивать Ваши услуги при отрицательном решении банка?</div>
-                                <div class="questions__question-content">Если Вы повторно обращаетесь к нам или даёте рекомендацию знакомым, то получаете скидку 10% на наши услуги</div>
+                                <div class="questions__question-content">Нет, наши услуги оплачиваются только в случае положительного решения банка и после получения денежных средств</div>
                             </div>
                             <div class="questions__question">
                                 <div class="questions__question-header">У меня плоха кредитная история, постоянно отказывают банки, вы можете мне помочь?</div>
-                                <div class="questions__question-content">Если Вы повторно обращаетесь к нам или даёте рекомендацию знакомым, то получаете скидку 10% на наши услуги</div>
+                                <div class="questions__question-content">Да, выдача кредитов с плохой кредитной историей это наш профиль, все ситуации решаются индивидуально.</div>
                             </div>
                         </div>
                         <!-- /.question__accordion -->

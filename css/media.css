@@ -76,6 +76,12 @@
     /* poll */
 }
 
+@media screen and (max-width: 1515px) {
+    .percent {
+        justify-content: space-around !important;
+    }
+}
+
 @media screen and (max-width: 1500px) {
     .info {
         padding: 0 20px 130px 20px;
@@ -117,9 +123,9 @@
     /* navigation */
     /* header */
     .header {
-        background-position-y: -176px;
+        background-position-y: -75px;
         background-position-x: center;
-        background-size: 1480px;
+        background-size: 1480px 615px;
     }
     .percent {
         padding-top: 140px;
@@ -190,8 +196,8 @@
 @media (max-width: 1200px) {
     /* header */
     .header {
-        background-position-y: -166px;
-        background-size: 1200px;
+        background-position-y: -45px;
+        background-size: 1200px 436px;
     }
     .percent {
         padding-top: 70px;
@@ -381,8 +387,8 @@
     /* navigation */
     /* header */
     .header {
-        background-position-y: -115px;
-        background-size: 991px;
+        background-position-y: -50px;
+        background-size: 991px 380px;
     }
     .percent {
         padding-top: 35px;
@@ -557,12 +563,44 @@
         text-align: center;
     }
     /* footer */
+    /* modal */
+    .modal-content {
+        padding: 20px 0 30px 30px;
+    }
+    .modal-dialog {
+        max-width: 468px;
+    }
+    /* modal */
 }
 
 @media screen and (max-width: 850px) {
     .faster__col-img {
         display: none;
     }
+}
+
+@media (max-width: 835px) {
+    /* modal */
+    .modal-dialog {
+        max-width: 315px !important;
+        margin: 1.75rem auto !important;
+    }
+    .modal-body--content__right {
+        display: none;
+    }
+    .modal-content {
+        padding: 20px 10px 21px 20px;
+    }
+    .title-modal {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .modal-body__text {
+        font-size: 14px;
+        line-height: 17px;
+        width: 275px;
+    }
+    /* modal */
 }
 
 @media (max-width: 767px) {
@@ -595,10 +633,10 @@
     /* header */
     .header {
         border: none;
-        background-position-y: 300px;
+        background-position-y: 268px;
         background-size: auto;
         background-position-x: -15px;
-        background-size: 767px;
+        background-size: 767px 480px;
     }
     .percent__one-hundrerd {
         font-size: 50px;
@@ -805,7 +843,8 @@
     /* navigation */
     /* header */
     .header {
-        background-position-y: 144px;
+        background-position-y: 123px;
+        background-size: 767px 417px;
     }
     .percent__one-hundrerd {
         font-size: 30px;
@@ -1049,6 +1088,19 @@
         display: none;
     }
     /* poll */
+    /* modal */
+    .modal-thanks {
+        width: 315px;
+    }
+    .modal-thanks__content {
+        padding: 70px 0 0 0;
+    }
+    .thanks__content--text {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 120px;
+    }
+    /* modal */
 }
 
 @media (max-width: 425px) {
