@@ -87,36 +87,27 @@ window.addEventListener('DOMContentLoaded', () => {
             payment.textContent = '0';
         }
 
-        // console.log(typeof(+calcInput.value.replace(/\D/g, '')));
-
     });
 
-    // slick
 
-    // $('.variable-width').slick({
-    //   infinite: false,
-    //   speed: 300,
-    //   slidesToShow: 1,
-    //   centerMode: true,
-    //   variableWidth: true
-    // });
+    // Слайдер в секции "Немного о нашей компании" с прогрессбаром.
 
-    function setProgress(index) {
-        const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
+    function setProgress(index, slider, progressBar) {
+        const calc = ((index + 1) / (slider.slick('getSlick').slideCount)) * 100;
 
-        $progressBar
+        progressBar
             .css('background-size', `${calc}% 100%`)
             .attr('aria-valuenow', calc);
 
         // $progressBarLabel.text(`${calc.toFixed(2)}% completed`);
     }
 
-    const $slider = $('.variable-width');
-    const $progressBar = $('.progress');
-    const $progressBarLabel = $('.slider__label');
+    const $slider = $('.variable-width'),
+          $progressBar = $('.info__progress');
+    // const $progressBarLabel = $('.slider__label');
 
     $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-        setProgress(nextSlide);
+        setProgress(nextSlide, $slider, $progressBar);
     });
 
     $slider.slick({
@@ -128,7 +119,7 @@ window.addEventListener('DOMContentLoaded', () => {
         arrow: false
     });
 
-    setProgress(0);
+    setProgress(0, $slider, $progressBar);
 
     document.querySelector('.info__slider .slick-next').style.display = 'none';
 
@@ -144,8 +135,27 @@ window.addEventListener('DOMContentLoaded', () => {
 
 });
 
+// Слайдер в секции "Оформим кредит" с прогрессбаром
+
 if ($(window).width() < 426) {
-    $('.single-item').slick({
+    function setProgress(index, slider, progressBar) {
+        const calc = ((index + 1) / (slider.slick('getSlick').slideCount)) * 100;
+
+        progressBar
+            .css('background-size', `${calc}% 100%`)
+            .attr('aria-valuenow', calc);
+
+        // $progressBarLabel.text(`${calc.toFixed(2)}% completed`);
+    }
+    
+    const sliderСredit = $('.single-item'),
+          progressCredit = $('.arrange__progress');
+
+    sliderСredit.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        setProgress(nextSlide, sliderСredit, progressCredit);
+    });
+
+    sliderСredit.slick({
         infinite: false,
         dots: false,
         slidesToShow: 1,
@@ -154,4 +164,6 @@ if ($(window).width() < 426) {
         centerMode: true,
         centerPadding: '30px'
     });
+
+    setProgress(0, sliderСredit, progressCredit);
 }
