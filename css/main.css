@@ -1324,6 +1324,52 @@ button:focus {
 /* faster */
 
 
+/* video-reviews */
+
+.video-reviews {
+    margin-bottom: 150px;
+    margin-top: -70px;
+}
+
+.block--slider__card {
+    border-radius: 7px;
+}
+
+.fancybox-button--arrow_left,
+.fancybox-button--arrow_right {
+    display: none !important;
+}
+
+.play-vidio {
+    transform: translate(50%, 50%);
+    top: 0;
+    left: 0;
+}
+
+.blur-filter {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(5px);
+    border-radius: 0px 0px 6px 6px;
+    bottom: 0;
+    width: 100%;
+}
+
+.title-blur {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.date-blur {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+
+/* video-reviews */
+
+
 /* footer */
 
 .footer {

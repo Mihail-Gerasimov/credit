@@ -103,7 +103,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     const $slider = $('.variable-width'),
-          $progressBar = $('.info__progress');
+        $progressBar = $('.info__progress');
     // const $progressBarLabel = $('.slider__label');
 
     $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -116,7 +116,8 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
-        arrow: false
+        arrow: false,
+        centerPadding: '0px 25px 25px'
     });
 
     setProgress(0, $slider, $progressBar);
@@ -147,9 +148,9 @@ if ($(window).width() < 426) {
 
         // $progressBarLabel.text(`${calc.toFixed(2)}% completed`);
     }
-    
+
     const sliderСredit = $('.single-item'),
-          progressCredit = $('.arrange__progress');
+        progressCredit = $('.arrange__progress');
 
     sliderСredit.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
         setProgress(nextSlide, sliderСredit, progressCredit);
@@ -167,3 +168,35 @@ if ($(window).width() < 426) {
 
     setProgress(0, sliderСredit, progressCredit);
 }
+
+
+// if ($(window).width() < 426) {
+//     function setProgress(index, slider, progressBar) {
+//         const calc = ((index + 1) / (slider.slick('getSlick').slideCount)) * 100;
+
+//         progressBar
+//             .css('background-size', `${calc}% 100%`)
+//             .attr('aria-valuenow', calc);
+
+//         // $progressBarLabel.text(`${calc.toFixed(2)}% completed`);
+//     }
+
+//     const sliderСredit = $('.single-item'),
+//           progressCredit = $('.arrange__progress');
+
+//     sliderСredit.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+//         setProgress(nextSlide, sliderСredit, progressCredit);
+//     });
+
+//     sliderСredit.slick({
+//         infinite: false,
+//         dots: false,
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '30px'
+//     });
+
+//     setProgress(0, sliderСredit, progressCredit);
+// }
