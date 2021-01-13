@@ -1336,7 +1336,10 @@ button:focus {
 }
 
 .fancybox-button--arrow_left,
-.fancybox-button--arrow_right {
+.fancybox-button--arrow_right,
+.fancybox-button--play,
+.fancybox-button--thumbs,
+.fancybox-infobar {
     display: none !important;
 }
 
