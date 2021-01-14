@@ -200,3 +200,13 @@ if ($(window).width() < 426) {
 
 //     setProgress(0, sliderСredit, progressCredit);
 // }
+
+const nav = document.querySelector('.fixed-nav');
+
+window.onscroll = function () {
+    if (pageYOffset >= 100) {
+        nav.style.top = '0';
+    }else{
+        nav.style.top = '50px';
+    }
+}
