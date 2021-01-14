@@ -1116,6 +1116,21 @@ button:focus {
     padding: 15px 35px;
     color: #9B9B9B;
     margin-right: 20px;
+    transition: 0.3s;
+}
+
+.quiz-back:hover {
+    margin-right: 20px;
+    border: 1px solid #C2C2C2;
+    background: #C2C2C2;
+    transition: 0.3s;
+}
+
+.quiz-back:focus {
+    margin-right: 20px;
+    border: 1px solid #C2C2C2;
+    background: #C2C2C2;
+    transition: 0.3s;
 }
 
 .btn-further {
