@@ -1106,6 +1106,16 @@
         padding: 13px 0;
         margin-right: 58px;
     }
+    .quiz-back:hover {
+        margin-right: 58px;
+        background: transparent;
+        border: none;
+    }
+    .quiz-back:focus {
+        margin-right: 58px;
+        background: transparent;
+        border: none;
+    }
     .subtitle-quiz {
         font-size: 18px;
         line-height: 23px;

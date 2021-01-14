@@ -72,15 +72,24 @@ button {
     margin: 0px;
 }
 
-input:hover,
 button:hover {
+    border: 0;
+    outline: none;
+}
+
+button:focus {
+    box-shadow: none !important;
+    border: none;
+    outline: none;
+}
+
+input:hover {
     margin: 0px;
     border: 0;
     outline: none;
 }
 
-input:focus,
-button:focus {
+input:focus {
     margin: 0px;
     box-shadow: none !important;
     border: none;
