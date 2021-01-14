@@ -151,6 +151,12 @@ button:focus {
 
 /* navigation */
 
+.fixed-nav {
+    background-color: #fff;
+    position: fixed;
+    z-index: 1000;
+}
+
 .nav-link.disabled {
     pointer-events: painted !important;
     cursor: pointer !important;

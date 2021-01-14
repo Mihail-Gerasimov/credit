@@ -624,6 +624,10 @@
 
 @media (max-width: 767px) {
     /* navigation */
+    .fixed-nav {
+        position: inherit;
+        z-index: auto;
+    }
     .navbar {
         background-color: #fff;
         z-index: 10;
