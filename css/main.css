@@ -215,7 +215,7 @@ button:focus {
     background: url(../img/header/header-fon.png);
     margin-bottom: 120px;
     background-repeat: no-repeat;
-    background-position-y: -160px;
+    background-position-y: -90px;
     background-position-x: center;
 }
 
@@ -229,7 +229,7 @@ button:focus {
 }
 
 .percent {
-    padding-top: 230px;
+    padding-top: 300px;
     z-index: 1;
 }
 
@@ -845,7 +845,7 @@ button:focus {
 
 .info__help-img {
     position: absolute;
-    bottom: -4px;
+    bottom: 0;
     right: 30%;
 }
 
